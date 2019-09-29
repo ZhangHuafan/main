@@ -1,16 +1,16 @@
 package seedu.address.commons.util;
 
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-import static seedu.address.commons.util.CollectionUtil.requireAllNonNull;
-import static seedu.address.testutil.Assert.assertThrows;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
-import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static seedu.address.commons.util.CollectionUtil.requireAllNonNull;
+import static seedu.address.testutil.Assert.assertThrows;
 
 public class CollectionUtilTest {
     @Test
@@ -83,16 +83,16 @@ public class CollectionUtilTest {
     }
 
     /**
-     * Asserts that {@code CollectionUtil#requireAllNonNull(Object...)} throw {@code NullPointerException}
-     * if {@code objects} or any element of {@code objects} is null.
+     * Asserts that {@code CollectionUtil#requireAllNonNull(Object...)} throw {@code NullPointerException} if {@code
+     * objects} or any element of {@code objects} is null.
      */
     private void assertNullPointerExceptionThrown(Object... objects) {
         assertThrows(NullPointerException.class, () -> requireAllNonNull(objects));
     }
 
     /**
-     * Asserts that {@code CollectionUtil#requireAllNonNull(Collection<?>)} throw {@code NullPointerException}
-     * if {@code collection} or any element of {@code collection} is null.
+     * Asserts that {@code CollectionUtil#requireAllNonNull(Collection<?>)} throw {@code NullPointerException} if {@code
+     * collection} or any element of {@code collection} is null.
      */
     private void assertNullPointerExceptionThrown(Collection<?> collection) {
         assertThrows(NullPointerException.class, () -> requireAllNonNull(collection));
